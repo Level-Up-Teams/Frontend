@@ -20,6 +20,7 @@ import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import Avatar from 'primevue/avatar';
 import Dropdown from 'primevue/dropdown';
+import Checkbox from 'primevue/checkbox';
 
 createApp(App)
     .use(PrimeVue, {ripple: true})
@@ -30,4 +31,5 @@ createApp(App)
     .component('Button', Button)
     .component('Avatar', Avatar)
     .component('Dropdown', Dropdown)
+    .component('Checkbox', Checkbox)
     .mount('#app')
