@@ -14,6 +14,11 @@ import 'primeflex/primeflex.css';
 
 
 import InputText from 'primevue/inputtext';
+import Listbox from 'primevue/listbox';
+import DataView from 'primevue/dataview';
+import Rating from 'primevue/rating';
+import Tag from 'primevue/tag';
+import Carousel from 'primevue/carousel';
 import Divider from 'primevue/divider';
 import Image from 'primevue/image'
 import Menubar from 'primevue/menubar';
@@ -24,6 +29,11 @@ import Dropdown from 'primevue/dropdown';
 createApp(App)
     .use(PrimeVue, {ripple: true})
     .component('InputText', InputText)
+    .component('ListBox', Listbox)
+    .component('DataView', DataView)
+    .component('Rating', Rating)
+    .component('Tag', Tag)
+    .component('Carousel', Carousel)
     .component('Divider', Divider)
     .component('Image', Image)
     .component('Menubar', Menubar)
