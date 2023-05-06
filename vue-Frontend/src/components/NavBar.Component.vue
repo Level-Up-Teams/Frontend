@@ -8,7 +8,7 @@
          <template #end > <!--Cargar imaganes del json-->
             <Avatar
                image="https://lamenteesmaravillosa.com/wp-content/uploads/2022/03/mujer-ojos-cerrados-mano-corazon-768x512.jpg"
-               class="mr-5" size="xlarge" shape="circle" :model="optionUser"/>
+               class="mr-5" size="xlarge" shape="circle" />
          </template>
       </Menubar>
    </div>
@@ -74,5 +74,8 @@ const items = ref([
    height: 4rem;
    margin-left: 1rem;
    margin-right: 1rem;
+}
+.card {
+   margin-bottom: 30px;
 }
 </style>
