@@ -1,17 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeComponent from '../components/home/MainContent.component.vue'
-import EjemploComponent from '../components/ejemplo.vue'
+import CoachesService from '../components/CoachesList/CoachesList.component.vue'
 
 const routes = [
+    {
+        path: '/',
+        redirect: '/home'
+    },
     {
         path: '/home',
         name: 'home',
         component: HomeComponent
     },
     {
-        package: '/ejemplo',
-        name: 'ejemplo',
-        component: EjemploComponent
+        path: '/coaches',
+        name: 'coaches',
+        component: CoachesService
     }
 
 ];

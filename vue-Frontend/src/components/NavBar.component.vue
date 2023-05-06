@@ -32,7 +32,7 @@ const items = ref([
    {
       label: 'Coaches',
       icon: 'pi pi-users',
-      to: '/ejemplo'
+      to: '/coaches'
    },
    {
       label: 'Video Games',
@@ -43,7 +43,6 @@ const items = ref([
       icon: 'pi pi-calculator'
    },
    {
-      //Implementar el profile en el, que muestre la imagen del usuario con borde redondo y el nombre, tambien que tenga un boton de cerrar sesion
       label: 'Profile',
       icon: 'pi pi-user',
       items: [
