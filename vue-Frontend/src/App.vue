@@ -8,9 +8,9 @@
 </template>
 
 <script setup>
-import NavBarComponent from "./components/NavBar.Component.vue";
-import YourCoaches from "@/coaches-list/components/YourCoaches.Component.vue";
-import CoachesList from "@/coaches-list/components/CoachesList.Component.vue";
+import NavBarComponent from "./components/NavBar.component.vue";
+import YourCoaches from "@/components/CoachesList/YourCoaches.component.vue";
+import CoachesList from "@/components/CoachesList/CoachesList.component.vue";
 </script>
 
 <style>

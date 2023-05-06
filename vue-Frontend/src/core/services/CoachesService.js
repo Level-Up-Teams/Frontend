@@ -1,5 +1,4 @@
 import axios from "axios";
-
 export const CoachesService = {
     async getCoachesData() {
         try {

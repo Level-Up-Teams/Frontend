@@ -55,7 +55,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import {CoachesService} from "@/coaches-list/services/CoachesService";
+import {CoachesService} from "@/core/services/CoachesService";
 
 //let apiCoaches = new CoachesService();
 

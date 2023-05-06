@@ -41,7 +41,7 @@
 
 <script setup>
     import { ref, onMounted } from "vue";
-    import {CoachesService} from "@/coaches-list/services/CoachesService";
+    import {CoachesService} from "@/core/services/CoachesService";
 
     onMounted(() => {
         CoachesService.getCoaches().then((data) => (coach.value = data.slice(0, 10)));
