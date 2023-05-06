@@ -26,8 +26,10 @@ import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import Avatar from 'primevue/avatar';
 import Dropdown from 'primevue/dropdown';
-import Panel from "primevue/panel";
-import Card from "primevue/card";
+import Toolbar from 'primevue/toolbar';
+import Panel from 'primevue/panel';
+import Card from 'primevue/card';
+
 
 createApp(App)
     .use(router)
@@ -44,6 +46,7 @@ createApp(App)
     .component('Button', Button)
     .component('Avatar', Avatar)
     .component('Dropdown', Dropdown)
+    .component('Toolbar', Toolbar)
     .component('Panel', Panel)
     .component('Card', Card)
     .mount('#app')

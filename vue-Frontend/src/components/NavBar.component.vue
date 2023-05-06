@@ -36,7 +36,8 @@ const items = ref([
    },
    {
       label: 'Video Games',
-      icon: 'pi pi-box'
+      icon: 'pi pi-box',
+      to: '/games'
    },
    {
       label: 'My Games',
