@@ -1,16 +1,13 @@
 <template>
     <Card style="width: 45%" class="mycard">
         <template #header>
-            <img alt="user header" src="../assets/img/coach.jpg" />
+            <img alt="user header" :src="coach.image" />
         </template>
-        <template #title> Frank Villanueva </template>
-        <template #subtitle> Valorant </template>
+        <template #title> {{ coach.name }} </template>
+        <template #subtitle> {{ coach.category }} </template>
         <template #content>
             <p>
-                Hello to all friends, I am the coach that you have always been
-                looking for. I have 2 years of experience as a coach, leading
-                giant teams like G2 and I know that I can be of great help to
-                you now.
+                {{ coach.description }}
             </p>
         </template>
     </Card>
@@ -23,6 +20,8 @@
         img {
             border-radius: 10px 10px 0 0;
             width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
         }
     }
     :deep(.p-card-subtitle) {
@@ -39,8 +38,8 @@
 }
 </style>
 
-<script>
-export default {
-    name: "CoachCard",
-};
+<script setup>
+defineProps({
+    coach: Object,
+});
 </script>

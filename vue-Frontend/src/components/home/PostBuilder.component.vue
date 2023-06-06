@@ -1,16 +1,37 @@
 <template>
     <Panel header="Create Post" class="mypanel">
         <template #icons>
-            <button class="p-panel-header-icon mr-2">
-                <span class="pi pi-upload"></span>
+            <button class="p-panel-header-icon mr-2" @click="openNew">
+                <span class="mybutton pi pi-upload"></span>
             </button>
         </template>
-        <Avatar image="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg" shape="circle" size="large" />
+        <Avatar
+            image="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
+            shape="circle"
+            size="large"
+        />
         <span class="p-input-icon-left">
-            <InputText class="myinput p-inputtext-lg" placeholder="Post your toughts..." v-model="text"
-                @keyup.enter="updateParent" />
+            <InputText
+                class="myinput p-inputtext-lg"
+                placeholder="Post your toughts..."
+                v-model="text"
+                @keyup.enter="updateParent"
+            />
         </span>
     </Panel>
+    <Dialog v-model:visible="publicationDialog" :style="{width: '450px'}" header="Publication Details" :modal="true" class="p-fluid">
+            <div class="field">
+                <label for="image">URL Image</label>
+                <InputText id="image" required="true" autofocus v-model="publication.urlImage"/>
+            </div>
+            <div class="field">
+                <label for="description">Description</label>
+                <InputText id="description" required="true" autofocus v-model="publication.description"/>
+            </div>
+            <template #footer>
+                <Button label="Save" icon="pi pi-check" text @click="saveProduct" />
+            </template>
+        </Dialog>
 </template>
 
 <style lang="scss" scoped>
@@ -56,28 +77,48 @@ export default {
     data() {
         return {
             text: "",
-            newPublication: new Object
-        }
+            publicationDialog: false,
+            submitted: false,
+            publication: {}
+        };
     },
     props: {
         publications: {
             type: Array,
             default: () => [],
-        }
+        },
     },
     methods: {
+        openNew() {
+            this.publicationDialog = true;
+        },
+        saveProduct() {
+            this.$emit("getPublication", { 
+                id: this.publications.length + 1,
+                username: "Anthony Guerrero",
+                time: "Right now",
+                description: this.publication.description,
+                urlLogo:
+                    "https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg",
+                urlImage: this.publication.urlImage
+             });
+
+            this.publicationDialog = false;
+        },
         updateParent() {
-            const publication = {
+            this.$emit("getPublication", { 
                 id: this.publications.length + 1,
                 username: "Anthony Guerrero",
                 time: "Right now",
                 description: this.text,
-                urlLogo: "https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg",
-                urlImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cffcfd128204241.615b48ccbbaf2.jpg"
-            }
-            this.text = ""
-            this.$emit('getPublication', { publication })
-        }
-    }
+                urlLogo:
+                    "https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg",
+                urlImage:
+                    "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cffcfd128204241.615b48ccbbaf2.jpg",
+             });
+
+             this.text = ""
+        },
+    },
 };
 </script>

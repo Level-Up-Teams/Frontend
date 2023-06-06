@@ -12,7 +12,7 @@ export const CoachesService = {
 
     async getCoachesMini() {
         const coachesData = await this.getCoachesData();
-        return coachesData.slice(0, 5);
+        return coachesData.slice(0, 2);
     },
 
     async getCoachesSmall() {

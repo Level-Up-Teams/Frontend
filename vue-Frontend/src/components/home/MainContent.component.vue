@@ -1,8 +1,14 @@
 <template>
     <div class="base">
-        <PostBuilder @getPublication="pushPublication" :publications="publications"/>
+        <PostBuilder
+            @getPublication="pushPublication"
+            :publications="publications"
+        />
         <Divider></Divider>
-        <Publication v-for="publication in publications" :publication = "publication"/>
+        <Publication
+            v-for="publication in publications"
+            :publication="publication"
+        />
         <Divider></Divider>
         <CoachesForYou />
     </div>
@@ -21,30 +27,32 @@
 }
 </style>
 
-<script>
+<script setup>
 import { PublicationsService } from "../../core/services/http-publications.service";
 import PostBuilder from "./PostBuilder.component.vue";
 import Publication from "./Publication.component.vue";
 import CoachesForYou from "./CoachesForYou.component.vue";
-export default {
-    name: "MainContent",
-    components: { PostBuilder, Publication, CoachesForYou },
-    data() {
-        return {
-            publications: [],
-            apiPublications: new PublicationsService() 
-        };
-    },
-    created() {
-        this.getPublications();
-    },
-    methods: {
-        getPublications() {
-            this.apiPublications.getInfo().then(response => this.publications = response.data)
-        },
-        pushPublication(obj) {
-            this.publications.push(obj.publication)
-        }
-    }
-};
+import { ref, onMounted } from "vue";
+
+const publications = ref([]);
+const apiPublications = new PublicationsService();
+
+onMounted(() => {
+    getPublications();
+});
+
+async function getPublications() {
+    const response = await apiPublications.getInfo();
+    response.data.forEach((element) => {
+        publications.value.unshift(element);
+    });
+}
+
+async function pushPublication(obj) {
+    const response = await apiPublications
+        .postInfo(obj)
+        
+    publications.value.unshift(obj);
+    
+}
 </script>

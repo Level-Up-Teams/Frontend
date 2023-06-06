@@ -29,6 +29,7 @@ import Dropdown from 'primevue/dropdown';
 import Toolbar from 'primevue/toolbar';
 import Panel from 'primevue/panel';
 import Card from 'primevue/card';
+import Dialog from 'primevue/dialog';
 
 
 createApp(App)
@@ -49,4 +50,5 @@ createApp(App)
     .component('Toolbar', Toolbar)
     .component('Panel', Panel)
     .component('Card', Card)
+    .component('Dialog', Dialog)
     .mount('#app')
