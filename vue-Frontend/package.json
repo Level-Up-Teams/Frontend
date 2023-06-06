@@ -13,7 +13,6 @@
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primevue": "^3.28.0",
-    "sass": "^1.62.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
