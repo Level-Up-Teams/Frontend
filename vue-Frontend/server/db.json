@@ -291,111 +291,66 @@
       "urlImage": "https://img.redbull.com/images/c_crop,w_1920,h_960,x_0,y_0,f_auto,q_auto/c_scale,w_1200/redbullcom/2022/1/14/tph8eejg335hlizybmjj/neon-agente-valorant"
     }
   ],
-  "videogames": [
+  "videogames":[
     {
       "id": 1000,
       "code": "f230fh0g3",
       "name": "Dota 2",
-      "description": "Dota 2",
-      "image": "https://lh3.googleusercontent.com/rjB5xzrMuzLuWShz55w2P22s_a-hM46SxjeHWg50HVEYGcOY6yTqTTLBfEXvA0gr1s2goPl8F7LIXgO3_03uidzpC5IirtU6RzglPKoK"
+      "description": "Cada día, millones de jugadores de todo el mundo entran en batalla como uno de los más de cien héroes de Dota en un enfrentamiento por equipos de 5 contra 5. Dota es el juego de estrategia en tiempo real de acción multijugador más profundo jamás creado y siempre hay una nueva estrategia o táctica que descubrir. Jugar a Dota es gratis y siempre lo será. Comienza ya a defender tu Ancestro",
+      "image": "https://wallpapercave.com/wp/V8Ee1Bm.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/209/825/317/dota-2-dota-valve-valve-corporation-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/525/837/145/dota-logo-digital-art-fire-wallpaper-preview.jpg"
+
     },
     {
       "id": 1001,
       "code": "nvklal433",
       "name": "Arena of Valor",
-      "description": "Arena of Valor",
-      "image": "https://i.blogs.es/566944/1619416/1366_2000.webp"
+      "description": "¡Experimenta Arena of Valor, un nuevo y épico campo de batalla multijugador en línea (MOBA) 5 contra 5 desarrollado por TiMi Studio Group! Domina héroes únicos y poderosos, como Batman, mientras forma equipo con amigos. ¡ Crea el equipo más dominante que el mundo MOBA jamás haya visto! LOGOTIPO DE DC, BATMAN y todos los personajes y elementos relacionados y TM DC Comics.",
+      "image": "https://cdn.ligadegamers.com/imagenes/gemas-arena-of-valor-og.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/131/704/14/arena-of-valor-aov-hd-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/292/572/896/arena-of-valor-aov-hd-wallpaper-preview.jpg"
+
     },
     {
       "id": 1002,
       "code": "zz21cz3c1",
       "name": "Valorant",
-      "description": "Valorant",
-      "image": "https://lh3.googleusercontent.com/dTlk-M97Od2Ye0gn5bIPjNggLtuKpYG_iP9OV4cQg6Jxeay43xCYdKPUASo69XSFJA6wYA1C7DFqQ-v8jEvKzVBoE8a4gyv0ncnVSQsu"
+      "description": "Un shooter competitivo 5v5 basado en personajes de Riot Games. Disponible globalmente. Sube posiciones en el modo competitivo y gánate tu rango. Armas precisas. Alta letalidad. 5v5. Juego en equipo. Baja latencia. Gratuito. Juego táctico. Habilidades. Nuevos modos.",
+      "image": "https://gray-steep-harrier-901.mypinata.cloud/ipfs/QmNNBwS2EEWWpdXgFKw55KABivwWcxdhF6QZ2dwoLf8tJg/valorant.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/322/265/193/valorant-jett-valorant-hd-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/689/602/472/valorant-riot-games-video-games-digital-hd-wallpaper-preview.jpg"
+
     },
     {
       "id": 1003,
       "code": "244wgerg2",
       "name": "Counter-Strike",
-      "description": "Counter-Strike",
-      "image": "https://lh3.googleusercontent.com/oeu-NXj18znQybvSAvaX3VylWmAEMufcQaDpnU0ICJsbX3pWrurJpAExQqh_zibBgHnjjuyJxLiTnyqfmyG11JUkfEgCgYIse8YL7jjoNA"
+      "description": "Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en el fragor de la guerra antiterrorista más realista con este archiconocido juego por equipos. Alíate con compañeros para superar misiones estratégicas, asalta bases enemigas, rescata rehenes, y recuerda que tu personaje contribuye al éxito del equipo y viceversa.",
+      "image": "https://wallpapers.com/images/featured/gvy020lt6pjvnze8.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/974/147/692/counter-strike-global-offensive-cs-go-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/516/995/830/counter-strike-counter-strike-global-offensive-wallpaper-preview.jpg"
+
     },
     {
       "id": 1004,
       "code": "h456wer53",
       "name": "F1 2021",
-      "description": "F1 2021",
-      "image": "https://lh3.googleusercontent.com/TpSaW5QvU-DwwdqOtGRCFP_HTViqY4yQlrl50VDTXzO4x9iT9qWkyuijnAEDQPQdiIdXPwKBT3QeU7hlqrlF6bRqmFAzw6NYzAe6zvc"
+      "description": "La galardonada serie de F1® es el videojuego oficial de FIA Formula One World Championship™, que pone a las personas jugadoras al volante del mayor espectáculo de automovilismo de la tierra. Durante más de una década, la franquicia de F1 ha evolucionado y se ha ampliado para que experimentes el drama, la precisión y la gloria de la Fórmula 1 en consolas, PC y móviles. Tanto si compites contra equipos y pilotos reales en circuitos oficiales, como si te enfrentas a otras personas en la emocionante acción online o en pantalla dividida, dejas marca con la función de mánager de pilotos, Mi equipo, o disfrutas del esplendor y el glamour en la nueva zona de Vida F1®, la serie de F1 es tu billete de entrada a la cúspide del automovilismo.",
+      "image": "https://images3.alphacoders.com/119/1196171.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/413/911/752/formula-1-mercedes-benz-mercedes-f1-lewis-hamilton-mercedes-amg-petronas-hd-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/135/532/909/engine-ferrari-ferrari-f1-engine-1995-f1-engine-wallpaper-preview.jpg"
+
     },
     {
       "id": 1005,
       "code": "av2231fwg",
       "name": "League of Legend",
-      "description": "League of Legend",
-      "image": "https://lh3.googleusercontent.com/IYJ659zcJd_Sd3ebEBxhQbjLrgz2bGEApz3WboSdrWOUuPZYq06YuftUMZ9t5DpiAXLy_cOSTKPDC-KeKhzCtMTu4tJuBCgDAQ85u-U"
-    },
-    {
-      "id": 1006,
-      "code": "f230fh0g3",
-      "name": "Jessie",
-      "description": "Dota",
-      "image": "https://lh3.googleusercontent.com/zC-yNLJ4hvrh2diC7bwxADTAm4LgCEmAQ8BWomPWqqqmne4B6VKjFRJ7bq5fV8Y9k5TpTUCr7hx_JrKO7W5csHzrx8gedCrzLkhpMl-A"
-    },
-    {
-      "id": 1007,
-      "code": "nvklal433",
-      "name": "Frank",
-      "description": "Arena of Valor",
-      "image": "https://lh3.googleusercontent.com/qwJohAOZ3bF3dWvqrhma9OiqM_C2eF_-7QlXUKMmvhzzvlGpB6_nc4gcRyZYetgtlJSIhDr0xmyCGfXe9fF355EBx9Vfs-Jq5hnE8dA"
-    },
-    {
-      "id": 1008,
-      "code": "zz21cz3c1",
-      "name": "Hiro",
-      "description": "Valorant",
-      "image": "https://lh3.googleusercontent.com/fMSne96JVHLVFgJ5CyavS3JXQ-9_EKI32rX6xonBFzjOYtbLI8luhyIFek67IwCjMF3i9sD8s82wLxWOAa1JRmr0O75EeZ2VIqI3BTP9eg"
-    },
-    {
-      "id": 1009,
-      "code": "244wgerg2",
-      "name": "Raul",
-      "description": "Counter-Strike",
-      "image": "https://www.clarin.com/img/2018/05/17/ByilvYiCf_720x0__1.jpg"
-    },
-    {
-      "id": 1010,
-      "code": "h456wer53",
-      "name": "Roger",
-      "description": "F1 2021",
-      "image": "https://lh3.googleusercontent.com/YLRxzEHD017Tl3wr0UiEE61fG9B4zS5zsbtwNgGEOrESV18QfFmEt6YyB5dYMqsB-Dx8xCHeeeIjQFvK-emC2HU1hwW4n_7JkI2_VCPSeA"
-    },
-    {
-      "id": 1011,
-      "code": "av2231fwg",
-      "name": "Macarena",
-      "description": "Dota",
-      "image": "https://lh3.googleusercontent.com/36wd07C8Kq91doqdNSAo3SRlsAjOMGI842dCgBdf32UWst0YEsS96kOSZGwKDFAMoq_r7x-_4PY3sK5UQh_RtnqComqkD3wmeznZSEglXA"
-    },
-    {
-      "id": 1012,
-      "code": "bib36pfvm",
-      "name": "Luis",
-      "description": "League of Leyend",
-      "image": "https://lh3.googleusercontent.com/F-HGN9j17D97sxUYvZd8sMfONZrch3hcgeShtdp_lQgceGCOrj-W-cD2VB4uOO8mS3rxpGTVMclEQ7cShpQjtMfaNudG5qqh4ytE0e8"
-    },
-    {
-      "id": 1013,
-      "code": "mbvjkgip5",
-      "name": "Rodrigo",
-      "description": "Valorant",
-      "image": "https://lh3.googleusercontent.com/OQiccMfK-gm5Mv7Yse6IIfSDvqdiAKslPRQwpjGoDyIBvtalFu4DWDkVSR_fZhdBmVN-QxucvIsUYtdJ-LlmeyycG63fcGDsO7fuis4"
-    },
-    {
-      "id": 1014,
-      "code": "vbb124btr",
-      "name": "Jessica",
-      "description": "Dota 2",
-      "image": "https://lh3.googleusercontent.com/klvG0zbAcArkFhsmFswiZ5IUosxUnF_uhZz91fOhsx1NOasf28HbxoSTHqlG6yTsRFdnc9MKQNhz0ezeX0DwGw8Yih4cnc_Tac3_Z5KJ"
+      "description": "League of Legends es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.",
+      "image": "https://i.pinimg.com/originals/22/49/0d/22490db63367ba74ec73e9e913343f09.jpg",
+      "guide1": "https://c4.wallpaperflare.com/wallpaper/485/790/492/league-of-legends-kda-riot-games-ahri-ahri-league-of-legends-hd-wallpaper-preview.jpg",
+      "guide2": "https://c4.wallpaperflare.com/wallpaper/915/638/332/league-of-legends-true-damage-yasuo-league-of-legends-senna-league-of-legends-ekko-leauge-of-legends-hd-wallpaper-preview.jpg"
+
     }
   ]
 }
