@@ -1,7 +1,7 @@
 <template>
   <header class="Navbar">
     <NavBarComponent />
-    <MainContent />
+    <router-view />
   </header>
 </template>
 
@@ -10,4 +10,9 @@ import NavBarComponent from "./components/NavBar.Component.vue";
 import MainContent from "./components/home/MainContent.component.vue";
 </script>
 
-<style scoped></style>
+<style>
+
+html{
+    background-color: #284A76;
+}
+</style>

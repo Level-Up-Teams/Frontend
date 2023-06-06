@@ -1,13 +1,10 @@
 <template>
     <Card style="width: 100%" class="mycard">
         <template #header>
-            <img alt="user header" :src=publication.urlImage />
+            <img alt="user header" :src="publication.urlImage" />
         </template>
         <template #title>
-            <Avatar
-                :image=publication.urlLogo
-                shape="circle"
-            />
+            <Avatar :image="publication.urlLogo" shape="circle" />
             {{ publication.username }}
         </template>
         <template #subtitle> {{ publication.time }} </template>
@@ -29,7 +26,6 @@
             </p>
         </template>
     </Card>
-
 </template>
 
 <style lang="scss" scoped>
@@ -70,11 +66,8 @@
 }
 </style>
 
-<script>
-export default {
-    name: "Publication",
-    props: {
-        publication: Object
-    }
-};
+<script setup>
+defineProps({
+    publication: Object,
+});
 </script>

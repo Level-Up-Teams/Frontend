@@ -1,8 +1,8 @@
 <template>
     <Panel header="Coaches for you" class="mypanel">
-        <CoachCard v-for="coach in coaches" />
+        <CoachCard v-for="coach in coaches" :coach="coach" />
         <template #footer>
-            <Button label="See more" class="mybutton" />
+            <Button label="See more" class="mybutton" @click="goToCoaches" />
         </template>
     </Panel>
 </template>
@@ -32,15 +32,22 @@
 }
 </style>
 
-<script>
+<script setup>
 import CoachCard from "./CoachCard.component.vue";
-export default {
-    name: "CoachesForYou",
-    components: { CoachCard },
-    data() {
-        return {
-            coaches: ["Juan", "Pedro"],
-        };
-    },
+import { ref, onMounted } from "vue";
+import { CoachesService } from "@/core/services/CoachesService";
+import { useRouter } from "vue-router";
+
+const coaches = ref([]);
+const router = useRouter();
+
+onMounted(() => {
+    CoachesService.getCoachesMini().then((data) => (coaches.value = data));
+});
+
+const goToCoaches = () => {
+    router.push({
+        name: "coaches",
+    });
 };
 </script>
