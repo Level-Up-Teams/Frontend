@@ -1,16 +1,12 @@
 <template>
   <header class="Navbar">
     <NavBarComponent />
-      <YourCoaches/>
-      <CoachesList/>
-
+    <router-view />
   </header>
 </template>
 
 <script setup>
-import NavBarComponent from "./components/NavBar.component.vue";
-import YourCoaches from "@/components/CoachesList/YourCoaches.component.vue";
-import CoachesList from "@/components/CoachesList/CoachesList.component.vue";
+import NavBarComponent from "./components/NavBar.Component.vue";
 </script>
 
 <style>
