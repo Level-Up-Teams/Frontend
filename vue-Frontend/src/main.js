@@ -13,7 +13,6 @@ import 'primevue/resources/primevue.min.css'                 //core css
 import 'primeicons/primeicons.css'                           //icons
 import 'primeflex/primeflex.css';
 
-
 import InputText from 'primevue/inputtext';
 import Listbox from 'primevue/listbox';
 import DataView from 'primevue/dataview';
@@ -30,7 +29,10 @@ import Toolbar from 'primevue/toolbar';
 import Panel from 'primevue/panel';
 import Card from 'primevue/card';
 import Dialog from 'primevue/dialog';
-
+import Calendar from "primevue/calendar";
+import InputMask from "primevue/inputmask";
+import InputSwitch from "primevue/inputswitch";
+import InputNumber from "primevue/inputnumber";
 
 createApp(App)
     .use(router)
@@ -51,4 +53,8 @@ createApp(App)
     .component('Panel', Panel)
     .component('Card', Card)
     .component('Dialog', Dialog)
+    .component('Calendar', Calendar)
+    .component('InputMask', InputMask)
+    .component('InputSwitch', InputSwitch)
+    .component('InputNumber', InputNumber)
     .mount('#app')

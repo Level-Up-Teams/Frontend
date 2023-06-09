@@ -2,7 +2,10 @@
     <div class="card">
         <template class="flex card-container overflow-hidden">
             <h1 class="flex-grow-1 flex align-items-center justify-content-start m-2 px-5 py-3 border-round">Your coaches</h1>
-            <Button class="flex-none flex align-items-center justify-content-center m-2 px-5 py-3 border-round" label="Explore" severity="warning"/>
+            <router-link to="/coachesList">
+                <Button class="flex-none flex align-items-center justify-content-center m-2 px-5 py-3 border-round" label="Explore more" severity="warning"/>
+            </router-link>
+
         </template>
 
     </div>
@@ -10,7 +13,7 @@
         <h1 class="text-left py-5 px-3">In service</h1>
         <Carousel :value="coaches" :numVisible="2" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="border-1 surface-border border-round bg-cyan-600 hover:bg-cyan-700 m-2 text-center py-5 px-3">
+                <div class="border-1 surface-border border-round bg-cyan-600 hover:bg-cyan-700 m-2 text-center py-5 px-3" @click="router.push(`/coach/${slotProps.data.id}`)">
                     <div class="mb-3">
                         <img :src="slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
                     </div>
@@ -24,6 +27,8 @@
                         <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
                     </div>
                 </div>
+
+
             </template>
         </Carousel>
     </div>
@@ -33,7 +38,7 @@
         <h1 class="text-left py-5 px-3">Favorites</h1>
         <Carousel :value="coaches" :numVisible="2" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="border-0 surface-border border-round bg-cyan-600 hover:bg-cyan-700 m-2 text-center py-5 px-3">
+                <div class="border-0 surface-border border-round bg-cyan-600 hover:bg-cyan-700 m-2 text-center py-5 px-3" @click="router.push(`/coach/${slotProps.data.id}`)">
                     <div class="mb-3">
                         <img :src="slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
                     </div>
@@ -56,12 +61,11 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import {CoachesService} from "@/core/services/CoachesService";
-
-//let apiCoaches = new CoachesService();
+import {RouterLink, useRouter} from "vue-router"
+const router = useRouter()
 
 onMounted(() => {
     CoachesService.getCoachesSmall().then((data) => (coaches.value = data.slice(0, 8)));
-    //CoachesService.getCoachesSmall().then((data) => (console.log(data)));
 });
 
 const value1 = ref(null);

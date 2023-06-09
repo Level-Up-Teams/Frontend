@@ -15,7 +15,7 @@
 
             <template #list="slotProps">
                 <div class="col-12">
-                    <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
+                    <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4" @click="router.push(`/coach/${slotProps.data.id}`)">
                         <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" :src="slotProps.data.image" />
                         <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                             <div class="flex flex-column align-items-center sm:align-items-start gap-3">
@@ -42,6 +42,8 @@
 <script setup>
     import { ref, onMounted } from "vue";
     import {CoachesService} from "@/core/services/CoachesService";
+    import {RouterLink, useRouter} from "vue-router"
+    const router = useRouter()
 
     onMounted(() => {
         CoachesService.getCoaches().then((data) => (coach.value = data.slice(0, 10)));

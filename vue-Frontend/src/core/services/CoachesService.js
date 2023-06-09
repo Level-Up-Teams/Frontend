@@ -24,4 +24,9 @@ export const CoachesService = {
         const coachesData = await this.getCoachesData();
         return coachesData;
     },
+
+    async getById(id) {
+        const coach = await axios.get(`http://localhost:3000/api/coaches/${id}`);
+        return coach.data;
+    }
 };
